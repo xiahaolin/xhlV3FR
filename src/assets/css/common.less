@@ -1,0 +1,40 @@
+:root {
+  --thme-color1: rgba(23, 92, 211, 1);
+  --thme-color1-ghost: rgba(23, 92, 211, 0.3);
+  --thme-color1-entity: rgba(23, 92, 211, 0.5);
+  --el-color-primary: #425df8 !important;
+  --base-fontSize: 1;
+}
+
+// @font-face {
+//   font-family: "pmzd"; // 可以自己命名
+//   src: url("@/assets/font/PangMenZhengDaoBiaoTiTi-1.ttf"), url("@/assets/font/pmzdbtt.TTF"); // 换成自己要使用的字体包的路径
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+body {
+  font-size: 16px;
+  background-color: #fafbfc;
+  box-sizing: border-box;
+}
+
+/* 现代的，较粗的滚动条 */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--thme-color1-ghost);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--thme-color1-entity);
+}
+

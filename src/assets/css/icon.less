@@ -1,0 +1,39 @@
+@base_url: "@/assets/img/";
+
+
+.el-icon {
+  font-size: 24px !important;
+}
+#one_icon(@url) {
+  background-image: ~"url('@{base_url}@{url}')";
+}
+
+#base_icon_size() {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+#base_icon_small_size() {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+#base_icon_middle() {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+.chat_icon {
+  #base_icon_small_size();
+ // #one_icon('home_icon.png');
+}
+
